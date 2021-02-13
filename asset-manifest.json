@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/newSensitiveDog/static/css/main.7a1a2984.chunk.css",
+    "main.css": "/newSensitiveDog/static/css/main.1082e391.chunk.css",
     "main.js": "/newSensitiveDog/static/js/main.6410a40f.chunk.js",
     "main.js.map": "/newSensitiveDog/static/js/main.6410a40f.chunk.js.map",
     "runtime-main.js": "/newSensitiveDog/static/js/runtime-main.bf44ca33.js",
@@ -10,7 +10,7 @@
     "static/js/3.08941dba.chunk.js": "/newSensitiveDog/static/js/3.08941dba.chunk.js",
     "static/js/3.08941dba.chunk.js.map": "/newSensitiveDog/static/js/3.08941dba.chunk.js.map",
     "index.html": "/newSensitiveDog/index.html",
-    "static/css/main.7a1a2984.chunk.css.map": "/newSensitiveDog/static/css/main.7a1a2984.chunk.css.map",
+    "static/css/main.1082e391.chunk.css.map": "/newSensitiveDog/static/css/main.1082e391.chunk.css.map",
     "static/js/2.1b1b2dfc.chunk.js.LICENSE.txt": "/newSensitiveDog/static/js/2.1b1b2dfc.chunk.js.LICENSE.txt",
     "static/media/englishBW.51a68476.svg": "/newSensitiveDog/static/media/englishBW.51a68476.svg",
     "static/media/logo1.908fba65.svg": "/newSensitiveDog/static/media/logo1.908fba65.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.bf44ca33.js",
     "static/js/2.1b1b2dfc.chunk.js",
-    "static/css/main.7a1a2984.chunk.css",
+    "static/css/main.1082e391.chunk.css",
     "static/js/main.6410a40f.chunk.js"
   ]
 }
