@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/newSensitiveDog/static/css/main.0888e610.chunk.css",
-    "main.js": "/newSensitiveDog/static/js/main.d5b110be.chunk.js",
-    "main.js.map": "/newSensitiveDog/static/js/main.d5b110be.chunk.js.map",
+    "main.js": "/newSensitiveDog/static/js/main.6410a40f.chunk.js",
+    "main.js.map": "/newSensitiveDog/static/js/main.6410a40f.chunk.js.map",
     "runtime-main.js": "/newSensitiveDog/static/js/runtime-main.bf44ca33.js",
     "runtime-main.js.map": "/newSensitiveDog/static/js/runtime-main.bf44ca33.js.map",
     "static/js/2.1b1b2dfc.chunk.js": "/newSensitiveDog/static/js/2.1b1b2dfc.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.bf44ca33.js",
     "static/js/2.1b1b2dfc.chunk.js",
     "static/css/main.0888e610.chunk.css",
-    "static/js/main.d5b110be.chunk.js"
+    "static/js/main.6410a40f.chunk.js"
   ]
 }
