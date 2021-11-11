@@ -178,17 +178,17 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-    min-width: 25vw;
-    min-height: 75vh;
-    max-height: 80vh;
-    background-color: red;
+    min-width: 10rem;
+    min-height: 34rem;
+    max-height: 36rem;
+    /* background-color: red; */
   }
 
   .videosBox {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    min-width: 75vw;
+    min-width: 72vw;
     min-height: 75vh;
   }
 
@@ -206,19 +206,19 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    min-width: 25vw;
-    min-height: 60vh;
-    background-color: aqua;
+    min-width: 26rem;
+    min-height: 28rem;
+    /* background-color: aqua; */
   }
 
   .listItems .everyBtn {
-    min-width: 21vw;
-    min-height: 5vh;
+    min-width: 10rem;
+    min-height: 2.5rem;
     cursor: pointer;
     font-family: "Lato", sans-serif;
     font-size: 16px;
-    letter-spacing: 1.5px;
-    background-color: blue;
+    letter-spacing: 0.1rem;
+    /* background-color: blue; */
   }
 
   #item-1,
@@ -245,13 +245,15 @@
     padding: 0;
     animation: slow-out 1s ease-in-out 1;
     font-size: 15px;
+    width: 26rem;
+    background-color: yellow;
   }
 
   @keyframes slow-out {
     0% {
-      height: 15vh;
-      opacity: 1;
-      visibility: visible;
+      height: 9rem;
+      opacity: 0;
+      visibility: hidden;
       padding: 10px;
     }
 
@@ -267,18 +269,26 @@
     }
   }
 
+  /* #display .everyText {
+    background-color: blueviolet;
+    font-size: 15px;
+    width: 26rem;
+  } */
+
   #display .everyText {
     text-align: left;
     word-wrap: break-word;
-    height: 15vh;
+    height: 9rem;
     visibility: visible;
     opacity: 1;
     padding: 10px;
     animation: slow-in 1s ease-in-out 1;
     font-size: 15px;
-    letter-spacing: 1px;
+    line-height: 1.3rem;
+    /* letter-spacing: 0.1rem; */
     z-index: 1;
-    background-color: blueviolet;
+    width: 26rem;
+    /* background-color: blueviolet; */
   }
 
   @keyframes slow-in {
@@ -292,7 +302,7 @@
       opacity: 0;
     }
     100% {
-      height: 15vh;
+      height: 9rem;
       opacity: 1;
       visibility: visible;
       padding: 10px;

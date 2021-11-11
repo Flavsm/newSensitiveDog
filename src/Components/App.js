@@ -17,6 +17,8 @@ import OurWork from "./OurWork/OurWork";
 import ContactUs from "./ContactUs/ContactUs";
 import TopArrow from "./TopArrow/TopArrow";
 import spanishBW from "./spanishBW.svg";
+import cine1 from "./cine1.svg";
+import cine2 from "./cine2.svg";
 
 const App = () => {
   //source for videos -main page
@@ -55,7 +57,7 @@ const App = () => {
     [
       "back (2020) - Trailer",
       "Before Çairé (2020) - Trailer",
-      "Em Com Sintético - Subjetivo Objetivo (2020)",
+      "Em Coma Sintético - Subjetivo Objetivo (2020)",
       "Cantareira (2020)",
       "Interview With The Great Director (2018)",
       "continua - goldenloki (2017)",
@@ -72,8 +74,8 @@ const App = () => {
   //source for work description -work page
   const languageDescription = [
     [
-      "experimental, 3 retirem a terra, o cimento e principalmente o concreto. recolham as flores da saudade. ergam o caixão para que celebremos. hoje, ele volta dos mortos. realizado por rodrigo ribeyro",
-      " Documentário, 21’ Na Vila de Alter do Chão, no Pará, os catraieiros exercem seu trabalho nos dias que antecedem o Çairé, festa local responsável pelo maior movimento turístico, econômico, cultural e religioso da temporada. Realização Rodrigo Ribeyro Festivais: Mostra Competitiva Nacional do Curta Cinema  2020 – Festival Internacional de Curtas do Rio de Janeiro. Mostra Competitiva Nacional do Festival Internacional de Cinema de Alter do Chão. ",
+      "retirem a terra, o cimento e principalmente o concreto. recolham as flores da saudade. ergam o caixão para que celebremos. hoje, ele volta dos mortos.",
+      "Na Vila de Alter do Chão, no Pará, os catraieiros exercem seu trabalho nos dias que antecedem o Çairé, festa local responsável pelo maior movimento turístico, econômico, cultural e religioso da temporada.",
       "Videoclipe da faixa Subjetivo Objetivo, do duo experimental Em Coma Sintético",
       "Bento, trabalhador e morador do centro de São Paulo, volta ao lugar em que cresceu, a casa do avô na Serra da Cantareira, buscando não somente a paz, mas também um emprego.",
       "Nessa entrevista, o grande diretor utiliza imagens reais para detalhar o roubo que sofreu como parte do processo criativo de seu primeiro longa metragem, “Sem Celular”.",
@@ -100,12 +102,19 @@ const App = () => {
   // hook/function changes the theme and bg img
 
   const [logoImg, setLogoImg] = useState(logo1);
+  const [cineImg, setCineImg] = useState(cine2);
 
   const changePic = () => {
     if (logoImg === logo1) {
-      setTimeout(() => setLogoImg(logo2), 500);
+      setTimeout(() => {
+        setLogoImg(logo2);
+        setCineImg(cine1);
+      }, 500);
     } else {
-      setTimeout(() => setLogoImg(logo1), 500);
+      setTimeout(() => {
+        setLogoImg(logo1);
+        setCineImg(cine2);
+      }, 500);
     }
   };
 
@@ -214,7 +223,18 @@ const App = () => {
                   title="Cantareira Trailer"
                   addClass={"videoBox"}
                 />
-                <ImageBG imgClass="imgBox" imgSrc={logoImg} />
+                <ImageBG
+                  imgClass="cineBox"
+                  imgSrc={cineImg}
+                  alt={"cannes festival cinefondation logo"}
+                  id={"cannes-img"}
+                />
+                <ImageBG
+                  imgClass="imgBox"
+                  imgSrc={logoImg}
+                  alt={"company logo"}
+                  id={"logo-img"}
+                />
                 <SideVideo
                   videoLink={varLink2}
                   title="Antes do Çairé Trailer"

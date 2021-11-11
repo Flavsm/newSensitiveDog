@@ -1,28 +1,29 @@
 .videoBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    min-width: 20vw;
-    min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 20vw;
+  min-height: 20vh;
 }
 
 .sideVideos {
-    width: 180px;
+  width: 180px;
 }
 
 @media (min-width: 600px) {
-    .videoBox {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 100vw;
-        min-height: 30vh;
-    }
-    
-    .sideVideos {
-        width:400px;
-        height:320px;
-    }
+  .videoBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    min-height: 30vh;
+    /* background-color: chartreuse; */
+  }
+
+  .sideVideos {
+    width: 400px;
+    height: 320px;
+  }
 }
