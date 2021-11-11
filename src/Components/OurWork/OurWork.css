@@ -1,283 +1,301 @@
 .workBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    min-width: 100vw;
-    min-height: 85vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 100vw;
+  min-height: 85vw;
 }
 
 .listBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-items: center;
-    min-width: 100vw;
-    min-height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 50vh;
 }
 
 .videosBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 45vw;
-    min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 45vw;
+  min-height: 30vh;
 }
 
 .videosBox iframe {
-    width: 320px;
+  width: 320px;
 }
 
-
 .listItems {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 0;
-    min-width: 15vw;
-    min-height: 20vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0;
+  min-width: 15vw;
+  min-height: 20vh;
 }
 
 .listItems .everyBtn {
-    min-width: 20vw;
-    min-height: 12vh;
-    cursor: pointer;
-    font-family: 'Lato', sans-serif;
-    font-size: 10px;
-    letter-spacing: 1px;
-    text-align: center;
+  min-width: 20vw;
+  min-height: 12vh;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 .appPage .everyBtn {
-    border: 1px solid;
-    border-left: 1px solid;
-    border-right: 1px solid;
-    color: white;
-    background-color: black;
-    border-color: white;
+  border: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  color: white;
+  background-color: black;
+  border-color: white;
 }
 
 .appPage .everyBtn:hover {
-    color: black;
-    background-color: white;
-    border-style: solid;
-    border: 1px black;
-    transition: 0.5s ease-in-out;
+  color: black;
+  background-color: white;
+  border-style: solid;
+  border: 1px black;
+  transition: 0.5s ease-in-out;
 }
 
 .light .everyBtn {
-    border: 1px solid;
-    border-left: 1px solid;
-    border-right: 1px solid;
-    color: black;
-    background-color: white;
-    border-color: black;
+  border: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  color: black;
+  background-color: white;
+  border-color: black;
 }
 
 .light .everyBtn:hover {
-    color: white;
-    background-color: black;
-    border: 1px solid white;
-    transition: 0.5s ease-in-out;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  transition: 0.5s ease-in-out;
 }
 
-#item-1, #item-2, #item-3, #item-4, #item-5, #item-6 {
+#item-1,
+#item-2,
+#item-3,
+#item-4,
+#item-5,
+#item-6 {
+  display: flex;
+  flex-direction: column;
+}
+
+#item-1 #text-1,
+#item-2 #text-2,
+#item-3 #text-3,
+#item-4 #text-4,
+#item-5 #text-5,
+#item-6 #text-6 {
+  text-align: justify;
+  text-align-last: left;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  padding: 0;
+  animation: slow-out 1s ease-in-out 1;
+  font-size: 9px;
+}
+
+@keyframes slow-out {
+  0% {
+    height: 17vh;
+    opacity: 1;
+    visibility: visible;
+    padding: 5px;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  100% {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0;
+  }
+}
+
+#display {
+  display: flex;
+  flex-direction: column;
+}
+
+#display .everyText {
+  text-align: justify;
+  text-align-last: left;
+  height: 17vh;
+  visibility: visible;
+  opacity: 1;
+  padding: 5px;
+  animation: slow-in 1s ease-in-out 1;
+  font-size: 9px;
+}
+
+@keyframes slow-in {
+  0% {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    height: 17vh;
+    opacity: 1;
+    visibility: visible;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 600px) {
+  .workBox {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    min-height: 85vh;
+    width: 100vw;
+  }
+
+  .listBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-width: 25vw;
+    min-height: 75vh;
+    max-height: 80vh;
+    background-color: red;
+  }
+
+  .videosBox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-width: 75vw;
+    min-height: 75vh;
+  }
+
+  .videosBox .mainVideo {
+    height: 70vh;
+  }
+
+  .videosBox iframe {
+    height: 560px;
+    width: 800px;
+  }
+
+  .listItems {
     display: flex;
     flex-direction: column;
-}
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 25vw;
+    min-height: 60vh;
+    background-color: aqua;
+  }
 
-#item-1 #text-1, #item-2 #text-2, #item-3 #text-3, #item-4 #text-4, #item-5 #text-5, #item-6 #text-6 {
-    text-align: justify;
-    text-align-last: left;
+  .listItems .everyBtn {
+    min-width: 21vw;
+    min-height: 5vh;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    background-color: blue;
+  }
+
+  #item-1,
+  #item-2,
+  #item-3,
+  #item-4,
+  #item-5,
+  #item-6 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #item-1 #text-1,
+  #item-2 #text-2,
+  #item-3 #text-3,
+  #item-4 #text-4,
+  #item-5 #text-5,
+  #item-6 #text-6 {
+    text-align: left;
+    word-wrap: normal;
     height: 0;
     visibility: hidden;
     opacity: 0;
     padding: 0;
     animation: slow-out 1s ease-in-out 1;
-    font-size: 9px;
-}
+    font-size: 15px;
+  }
 
-@keyframes slow-out {
+  @keyframes slow-out {
     0% {
-        height: 17vh;  
-        opacity: 1;
-        visibility: visible; 
-        padding: 5px; 
+      height: 15vh;
+      opacity: 1;
+      visibility: visible;
+      padding: 10px;
     }
 
     25% {
-        opacity: 0;
+      opacity: 0;
     }
 
     100% {
-        height: 0;
-        opacity: 0;
-        visibility: hidden;
-        padding: 0;
+      height: 0;
+      opacity: 0;
+      visibility: hidden;
+      padding: 0;
     }
-}
+  }
 
-
-#display {
-    display: flex;
-    flex-direction: column;
-}
-
-#display .everyText {
-    text-align: justify;
-    text-align-last: left;
-    height: 17vh;
+  #display .everyText {
+    text-align: left;
+    word-wrap: break-word;
+    height: 15vh;
     visibility: visible;
     opacity: 1;
-    padding: 5px;
+    padding: 10px;
     animation: slow-in 1s ease-in-out 1;
-    font-size: 9px;
-}
+    font-size: 15px;
+    letter-spacing: 1px;
+    z-index: 1;
+    background-color: blueviolet;
+  }
 
-@keyframes slow-in {
-
+  @keyframes slow-in {
     0% {
-        height: 0;
-        opacity: 0;
-        visibility: hidden;
-        padding: 0;
+      height: 0;
+      opacity: 0;
+      visibility: hidden;
+      padding: 0;
     }
     70% {
-        opacity: 0;
+      opacity: 0;
     }
     100% {
-        height: 17vh; 
-        opacity: 1;
-        visibility: visible;
-        padding: 5px;
+      height: 15vh;
+      opacity: 1;
+      visibility: visible;
+      padding: 10px;
     }
-
-}
-
-@media (min-width: 600px) {
-    .workBox {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-around;
-        min-height: 85vh;
-        width: 100vw;
-    }
-    
-    .listBox {
-        display:flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: flex-end;
-        min-width: 25vw;
-        min-height: 75vh;
-    } 
-    
-    .videosBox {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        min-width: 75vw;
-        min-height: 75vh;
-    }
-    
-    .videosBox .mainVideo {
-        height: 70vh;
-    }
-
-    .videosBox iframe {
-        height: 560px;
-        width: 800px;
-    }
-
-
-    .listItems {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        min-width: 25vw;
-        min-height: 60vh;
-    }
-
-    .listItems .everyBtn {
-        min-width: 21vw;
-        min-height: 5vh;
-        cursor: pointer;
-        font-family: 'Lato', sans-serif;
-        font-size: 16px;
-        letter-spacing: 1.5px;
-    }
-
-    #item-1, #item-2, #item-3, #item-4, #item-5, #item-6 {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    #item-1 #text-1, #item-2 #text-2, #item-3 #text-3, #item-4 #text-4, #item-5 #text-5, #item-6 #text-6 {
-        text-align: left;
-        word-wrap: normal;
-        height: 0;
-        visibility: hidden;
-        opacity: 0;
-        padding: 0;
-        animation: slow-out 1s ease-in-out 1;
-        font-size: 15px;
-    }
-
-    @keyframes slow-out {
-        0% {
-            height: 15vh;  
-            opacity: 1;
-            visibility: visible; 
-            padding: 10px; 
-        }
-    
-        25% {
-            opacity: 0;
-        }
-    
-        100% {
-            height: 0;
-            opacity: 0;
-            visibility: hidden;
-            padding: 0;
-        }
-    }
-
-    #display .everyText {
-        text-align: left;
-        word-wrap: break-word;
-        height: 15vh;
-        visibility: visible;
-        opacity: 1;
-        padding: 10px;
-        animation: slow-in 1s ease-in-out 1;
-        font-size: 15px;
-        letter-spacing: 1px;
-        z-index: 1;
-    }
-
-    @keyframes slow-in {
-
-        0% {
-            height: 0;
-            opacity: 0;
-            visibility: hidden;
-            padding: 0;
-        }
-        70% {
-            opacity: 0;
-        }
-        100% {
-            height: 15vh; 
-            opacity: 1;
-            visibility: visible;
-            padding: 10px;
-        }
-    
-    }
+  }
 }
