@@ -1,0 +1,25 @@
+.boxTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 10vh;
+    margin-top: 10px;
+}
+
+#top-image {
+    height: 35px;
+}
+
+@media (min-width: 600px) {
+    .boxTitle {
+        display: flex;
+        flex-direction: row;
+        min-height: 14vh;
+        align-items: flex-end;
+        margin: 0;
+    }
+    
+    #top-image {
+        height: 60px;
+    }
+}

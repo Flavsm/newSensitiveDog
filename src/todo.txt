@@ -1,0 +1,7 @@
+to english/to portuguese button - done
+to dark moge/light mode button - done
+intro animation - done
+fix the loading video situation - done
+each menu item's page  - contact almost done
+    missing 'our work' videos 
+    email info on contact

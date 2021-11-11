@@ -1,0 +1,28 @@
+.contactBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 50vw;
+    min-height: 80vh;
+}
+
+.appPage .contactBtns {
+    fill: white;
+}
+
+.light .contactBtns {
+    fill: black;
+}
+
+@media (min-width: 600px) {
+    .contactBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 50vw;
+        min-height: 85vh;
+    }
+}
+

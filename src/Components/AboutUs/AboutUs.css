@@ -1,0 +1,33 @@
+.aboutBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 55vw;
+    min-height: 50vh;
+    margin-top: 10px;
+}
+
+#text-content {
+    width: 80vw;
+    text-align: justify;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    font-size: 12px;
+}
+
+@media (min-width: 600px) {
+
+    .aboutBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 50vw;
+        min-height: 85vh;
+    }
+
+    #text-content {
+        width: 40vw;
+        font-size: 20px;
+    }
+}
+

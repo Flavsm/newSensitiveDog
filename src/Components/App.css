@@ -1,0 +1,289 @@
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.appPage {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 0;
+    transition: 1s ease-in-out;
+    background-color: black;
+}
+
+.appPage .headerBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 10vh;
+}
+
+.appPage .mainBox {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 65vh;
+    width: 100vw;
+    font-size: 12px;
+}
+
+.appPage .footerBox {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    min-height: 10vh;
+}
+
+.appPage a {
+    text-decoration: none;
+    color: white;
+    transition: 1s ease-in-out;
+}
+
+.appPage .introImg {
+    display: none;
+}
+
+.animatePage .headerBox, .animatePage .mainBox, .animatePage .footerBox {
+    animation: smooth-in 1s linear 1;
+}
+
+@keyframes smooth-in {
+   
+    0% {
+        opacity: 0;
+    }
+   100% {
+       opacity: 1;
+   }
+}
+
+.light {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+    transition: 1s ease-in-out;
+    margin: 0;
+    background-color: white;
+}
+
+.light .headerBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 10vh;
+}
+
+.light .mainBox {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 65vh;
+    width: 100vw;
+    font-size: 12px;
+}
+
+.light .footerBox {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    min-height: 10vh;
+}
+
+.light a {
+    text-decoration: none;
+    color: black;
+    transition: 1s ease-in-out;
+}
+
+.light .introImg {
+    display: none;
+}
+
+.introAnimation {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.introAnimation .mainPage, .introAnimation .aboutUsPage, .introAnimation .ourWorkPage, .introAnimation .contactUsPage {
+    display: none;
+}
+
+.introImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    animation: intro-anim 3s linear 1 0.5s;
+}
+
+@keyframes intro-anim {
+
+    95% {
+        opacity: 0;
+    }
+}
+
+.mainPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.aboutUsPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;   
+    font-size: 12px;
+}
+
+.ourWorkPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.contactUsPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+@media (min-width: 600px) {
+
+    .appPage {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin: 0;
+        transition: 1s ease-in-out;
+        background-color: black;
+    }
+
+    .appPage .headerBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100vw;
+        min-height: 30vh;
+    }
+
+    .appPage .mainBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        min-height: 50vh;
+        min-width: 100vw;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .appPage .footerBox {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        min-height: 20vh;
+    }
+
+    .light {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: black;
+        transition: 1s ease-in-out;
+        margin: 0;
+        background-color: white;
+    }
+
+    .light .headerBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100vw;
+        min-height: 30vh;
+    }
+
+    .light .mainBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        min-height: 50vh;
+        min-width: 100vw;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .light .footerBox {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        min-height: 20vh;
+    }
+
+    .mainPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .aboutUsPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;   
+    }
+    
+    .ourWorkPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .contactUsPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+    }
+    
+}

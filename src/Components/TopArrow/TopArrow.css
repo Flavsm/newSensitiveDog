@@ -1,0 +1,31 @@
+.arrowBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 30vw;
+    min-height: 15vh;
+}
+
+#arrow-icon{
+    cursor: pointer;
+}
+
+.appPage .arrowBtns {
+    fill: white;
+}
+
+.light .arrowBtns{
+    fill: black;
+}
+
+@media (min-width: 600px) {
+    .arrowBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        min-width: 30vw;
+        min-height: 20vh;
+    }
+}

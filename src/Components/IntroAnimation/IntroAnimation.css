@@ -1,0 +1,9 @@
+#intro-logo {
+    height: 360px;
+}
+
+@media (min-width: 600px) {
+    #intro-logo {
+        height: 720px;
+    }
+}
