@@ -1,7 +1,7 @@
 body {
   margin: 0;
   overflow: hidden;
-  font-family: "Lato", sans-serif;
+  font-family: "Futura", sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -61,6 +61,7 @@ body {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
