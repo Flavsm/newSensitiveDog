@@ -8,8 +8,9 @@ const ItemList = (props) => {
         id={props.idBtn}
         className={props.classBtn}
         onClick={props.func}
-        /* onMouseEnter={() => console.log("hello")}
-        onMouseLeave={() => console.log("bye")} */
+      //onMouseDown={props.func2}
+      /* onMouseEnter={() => console.log("hello")}
+      onMouseLeave={() => console.log("bye")} */
       >
         {props.title}
       </button>

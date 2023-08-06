@@ -19,21 +19,18 @@ import TopArrow from "./TopArrow/TopArrow";
 import spanishBW from "./spanishBW.svg";
 import cine1 from "./cine1.svg";
 import cine2 from "./cine2.svg";
+import copywrite from "./copywrite.json";
 
 const App = () => {
   //source for videos -main page
-  const varLink1 =
-    "https://player.vimeo.com/video/410917207?autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0&controls=0&autopause=0#t=30s&texttrack=pt";
-  const varLink2 =
-    "https://player.vimeo.com/video/425697586?autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0&controls=0&autopause=0#t=30s&texttrack=pt";
+  const varLink1 = copywrite.videoLink.find(item => item.id === 1).link;
+  const varLink2 = copywrite.videoLink.find(item => item.id === 2).link;
+
 
   //source for texts -about page
-  const portugueseText =
-    "Fundada em 2019 pelo realizador Rodrigo Ribeyro, a Cachorro Sensível Filmes é uma produtora audiovisual independente que realiza videoclipes, ficções, documentários, híbridos e experimentais para o cinema, a televisão e as novas mídias. \n O nome nasce do encontro entre o interesse pela natureza contraditória dos animais, sejam eles humanos ou não, e o fator essencial para uma vida mais harmônica: o olhar sensibilizado. Através dessa ideia, a proposta é enxergar ao redor e a nós mesmos de maneira franca e curiosa. \n Original da cidade de São Paulo, transitando pelo Brasil e aberta ao mundo, a Cachorro Sensível Filmes tenta achar e compartilhar qualquer sombra ou lampejo das coisas que existem e inexistem por aí.";
-  const englishText =
-    "Founded in 2019 by director Rodrigo Ribeyro, Cachorro Sensível Filmes is an independent audiovisual production company that makes music videos, fiction, experimental and hybrid documentaries for cinema, television and new media. \n The name comes from the meeting between the interest in the contradictory nature of animals, whether human or not, and the essential factor for a more harmonious life: the sensitized gaze. Through this idea, the proposal is to see our surroundings and ourselves in a frank and curious way. \n Original from the city of São Paulo, transiting through Brazil and open to the world, Cachorro Sensível Filmes tries to find and share any shadow or glimmer of things that exist or do not exist out there.";
-  const spanishText =
-    "Fundada en 2019 por el director Rodrigo Ribeyro, Cachorro Sensível Filmes es una productora audiovisual independiente que realiza vídeos musicales, ficción, documentales, híbridos y experimentales para cine, televisión y nuevos medios. \n El nombre proviene del encuentro entre el interés por la naturaleza contradictoria de los animales, ya sean humanos o no, y el factor esencial para una vida más armoniosa: la mirada sensibilizada. A través de esta idea, la propuesta es ver alrededor y a nosotros mismos de una manera franca y curiosa. \n Originario de la ciudad de São Paulo, transitando por Brasil y abierto al mundo, Cachorro Sensível Filmes intenta encontrar y compartir cualquier sombra o atisbo de las cosas que existen o no existen ahí fuera.";
+  const portugueseText = copywrite.about.find(item => item.id === "PT").text;
+  const englishText = copywrite.about.find(item => item.id === "EN").text;
+  const spanishText = copywrite.about.find(item => item.id === "ES").text;
 
   //split the text into paragraphs
   let portText = portugueseText
@@ -45,59 +42,15 @@ const App = () => {
     .map((item, i) => <p key={i}>{item}</p>);
 
   //source for title name -work page
-  const languageTitle = [
-    [
-      "vôltô (2020) - Trailer",
-      "Antes do Çairé (2020) - Trailer",
-      "Em Coma Sintético - Subjetivo Objetivo (2020)",
-      "Cantareira (2020) - Trailer",
-      "Entrevista Com O Grande Diretor (2018)",
-      "continua - goldenloki (2017)",
-    ],
-    [
-      "back (2020) - Trailer",
-      "Before Çairé (2020) - Trailer",
-      "Em Coma Sintético - Subjetivo Objetivo (2020)",
-      "Cantareira (2020)",
-      "Interview With The Great Director (2018)",
-      "continua - goldenloki (2017)",
-    ],
-    [
-      "volver (2020) - Tráiler",
-      "Antes del Çairé (2020) - Tráiler",
-      "Em Coma Sintético - Subjetivo Objetivo (2020)",
-      "Cantareira (2020)",
-      "Entrevista Con El Gran Director (2018)",
-      "continua - goldenloki (2017)",
-    ],
-  ];
+  const portugueseTitle = copywrite.languageTitle.find(item => item.id === "PT").titles;
+  const englishtTitle = copywrite.languageTitle.find(item => item.id === "EN").titles;
+  const spanishTitle = copywrite.languageTitle.find(item => item.id === "ES").titles;
+
   //source for work description -work page
-  const languageDescription = [
-    [
-      "retirem a terra, o cimento e principalmente o concreto. recolham as flores da saudade. ergam o caixão para que celebremos. hoje, ele volta dos mortos.",
-      "Na Vila de Alter do Chão, no Pará, os catraieiros exercem seu trabalho nos dias que antecedem o Çairé, festa local responsável pelo maior movimento turístico, econômico, cultural e religioso da temporada.",
-      "Videoclipe da faixa Subjetivo Objetivo, do duo experimental Em Coma Sintético",
-      "Bento, trabalhador e morador do centro de São Paulo, volta ao lugar em que cresceu, a casa do avô na Serra da Cantareira, buscando não somente a paz, mas também um emprego.",
-      "Nessa entrevista, o grande diretor utiliza imagens reais para detalhar o roubo que sofreu como parte do processo criativo de seu primeiro longa metragem, “Sem Celular”.",
-      "Videoclipe da versão ao vivo de Continua, da banda Goldenloki (sp).",
-    ],
-    [
-      "remove the earth, the cement, and especially the concrete. gather the flowers of nostalgia. raise the coffin so that we may celebrate. today, he returns from the dead.",
-      "In the village of Alter do Chão, in Pará, the catraieiros do their work in the days before Çairé, the local festival responsible for the biggest touristic, economic, cultural and religious movement of the season",
-      "Music video of the track Subjetivo Objetivo, from the experimental duo Em Coma Sintético.",
-      "Bento, a worker and resident of downtown São Paulo, returns to the place where he grew up, his grandfather's house in the Cantareira Mountains, seeking not only peace, but also a job.",
-      'In this interview, the great director uses real images to detail the robbery he suffered as part of the creative process of his first feature film, “Without  Cellphone".',
-      "Music video of the live version of Continua, by the band Goldenloki (sp).",
-    ],
-    [
-      "retira la tierra, el cemento y sobre todo el hormigón. recoge las flores de la nostalgia. levanta el féretro para que podamos celebrar. hoy vuelve de entre los muertos",
-      "En la aldea de Alter do Chão, en Pará, los catraieiros trabajan en los días previos a Çairé, la fiesta local responsable del mayor movimiento turístico, económico, cultural y religioso de la temporada.",
-      "Video musical del tema Subjectivo Objectivo , del dúo experimental Em Coma Sintético",
-      "Bento, trabajador y residente en el centro de São Paulo, vuelve al lugar donde creció, la casa de su abuelo en la sierra de Cantareira, buscando no sólo paz, sino también un trabajo.",
-      'En esta entrevista, el gran director utiliza imágenes reales para detallar el robo que sufrió como parte del proceso creativo de su primer largometraje, "Sin Móvil".',
-      "Video musical de la versión en vivo de Continua, del grupo Goldenloki (sp).",
-    ],
-  ];
+  const portugueseDescription = copywrite.languageDescription.find(item => item.id === "PT").description;
+  const englishDescription = copywrite.languageDescription.find(item => item.id === "EN").description;
+  const spanishDescription = copywrite.languageDescription.find(item => item.id === "ES").description;
+
 
   // hook/function changes the theme and bg img
 
@@ -125,8 +78,8 @@ const App = () => {
     appPage
       ? (appPage.className = "light")
       : lightMode
-      ? (lightMode.className = "appPage")
-      : console.log("Error");
+        ? (lightMode.className = "appPage")
+        : console.log("Error");
 
     changePic();
   }
@@ -138,43 +91,43 @@ const App = () => {
   const [alt, setAlt] = useState(flagDefault);
   //hook to change class of the language img
   const [newClass, setNewClass] = useState("menuBox inPortuguese");
+
   //hook to change language of the page
-  const languageOption = [
-    ["sobre nós", "nosso trabalho", "contato"],
-    ["about us", "our work", "contact"],
-    ["sobre nosotros", "nuestro trabajo", "contacto"],
-  ];
-  const [language, setLanguage] = useState(languageOption[0]);
+  const portugueseOption = copywrite.languageOption.find(item => item.id === "PT").option;
+  const englishOption = copywrite.languageOption.find(item => item.id === "EN").option;
+  const spanishOption = copywrite.languageOption.find(item => item.id === "ES").option;
+
+  const [language, setLanguage] = useState(portugueseOption);
   const [aboutText, setAboutText] = useState(portText);
   /* const titleArr = [{TitleOne}, {TitleTwo}, {TitleThree}]; */
-  const [title, setTitle] = useState(languageTitle[0]);
-  const [description, setDescription] = useState(languageDescription[0]);
+  const [title, setTitle] = useState(portugueseTitle);
+  const [description, setDescription] = useState(portugueseDescription);
 
   const changeFlag = () => {
     if (flag === englishBW) {
       setFlag(spanishBW);
       setAlt("spanish flag");
-      setLanguage(languageOption[1]);
+      setLanguage(englishOption);
       setNewClass("menuBox inEnglish");
       setAboutText(engText);
-      setTitle(languageTitle[1]);
-      setDescription(languageDescription[1]);
+      setTitle(englishtTitle);
+      setDescription(englishDescription);
     } else if (flag === spanishBW) {
       setFlag(portugueseBW);
       setAlt("brazilian flag");
-      setLanguage(languageOption[2]);
+      setLanguage(spanishOption);
       setNewClass("menuBox inSpanish");
       setAboutText(spanText);
-      setTitle(languageTitle[2]);
-      setDescription(languageDescription[2]);
+      setTitle(spanishTitle);
+      setDescription(spanishDescription);
     } else {
       setFlag(englishBW);
       setAlt(flagDefault);
-      setLanguage(languageOption[0]);
+      setLanguage(portugueseOption);
       setNewClass("menuBox inPortuguese");
       setAboutText(portText);
-      setTitle(languageTitle[0]);
-      setDescription(languageDescription[0]);
+      setTitle(portugueseTitle);
+      setDescription(portugueseDescription);
     }
   };
   //

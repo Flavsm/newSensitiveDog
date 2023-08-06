@@ -1,0 +1,130 @@
+{
+    "videoLink": [
+        {
+            "id": 1,
+            "link": "https://player.vimeo.com/video/410917207?autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0&controls=0&autopause=0#t=30s&texttrack=pt"
+        },
+        {
+            "id": 2,
+            "link": "https://player.vimeo.com/video/425697586?autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0&controls=0&autopause=0#t=30s&texttrack=pt"
+        }
+    ],
+    "about": [
+        {
+            "id": "PT",
+            "text": "Fundada em 2019 pelo realizador Rodrigo Ribeyro, a Cachorro Sensível Filmes é uma produtora audiovisual independente que realiza videoclipes, ficções, documentários, híbridos e experimentais para o cinema, a televisão e as novas mídias. \n O nome nasce do encontro entre o interesse pela natureza contraditória dos animais, sejam eles humanos ou não, e o fator essencial para uma vida mais harmônica: o olhar sensibilizado. Através dessa ideia, a proposta é enxergar ao redor e a nós mesmos de maneira franca e curiosa. \n Original da Serra da Cantareira, transitando pelo Brasil e aberta ao mundo, a Cachorro Sensível Filmes tenta achar e compartilhar qualquer sombra ou lampejo das coisas que existem e inexistem por aí."
+        },
+        {
+            "id": "EN",
+            "text": "Founded in 2019 by director Rodrigo Ribeyro, Cachorro Sensível Filmes is an independent audiovisual production company that makes music videos, fiction, experimental and hybrid documentaries for cinema, television and new media. \n The name comes from the meeting between the interest in the contradictory nature of animals, whether human or not, and the essential factor for a more harmonious life: the sensitized gaze. Through this idea, the proposal is to see our surroundings and ourselves in a frank and curious way. \n Originated in Serra da Cantareira, transiting through Brazil and open to the world, Cachorro Sensível Filmes tries to find and share any shadow or glimmer of things that exist or do not exist out there."
+        },
+        {
+            "id": "ES",
+            "text": "Fundada en 2019 por el director Rodrigo Ribeyro, Cachorro Sensível Filmes es una productora audiovisual independiente que realiza vídeos musicales, ficción, documentales, híbridos y experimentales para cine, televisión y nuevos medios. \n El nombre proviene del encuentro entre el interés por la naturaleza contradictoria de los animales, ya sean humanos o no, y el factor esencial para una vida más armoniosa: la mirada sensibilizada. A través de esta idea, la propuesta es ver alrededor y a nosotros mismos de una manera franca y curiosa. \n Originario de la Serra da Cantareira, transitando por Brasil y abierto al mundo, Cachorro Sensível Filmes intenta encontrar y compartir cualquier sombra o atisbo de las cosas que existen o no existen ahí fuera."
+        }
+    ],
+    "languageTitle": [
+        {
+            "id": "PT",
+            "titles": [
+                "Entrevista Com O Grande Diretor (2019)",
+                "Antes do Çairé (2020) - Trailer",
+                "Em Coma Sintético - Subjetivo Objetivo (2020)",
+                "Cantareira (2021) - Trailer",
+                "Terranoite - Carabonina",
+                "Tarefa Comum - Mondrongo"
+            ]
+        },
+        {
+            "id": "EN",
+            "titles": [
+                "Interview With The Great Director (2019)",
+                "Before Çairé (2020) - Trailer",
+                "Em Coma Sintético - Subjetivo Objetivo (2020)",
+                "Cantareira (2021) - Trailer",
+                "Terranoite - Carabonina",
+                "Tarefa Comum - Mondrongo"
+            ]
+        },
+        {
+            "id": "ES",
+            "titles": [
+                "Entrevista Con El Gran Director (2019)",
+                "Antes del Çairé (2020) - Tráiler",
+                "Em Coma Sintético - Subjetivo Objetivo (2020)",
+                "Cantareira (2021)- Trailer",
+                "Terranoite - Carabonina",
+                "Tarefa Comum - Mondrongo"
+            ]
+        }
+    ],
+    "languageDescription": [
+        {
+            "id": "PT",
+            "description": [
+                "Híbrido, 8' \n\n Nessa entrevista, o grande diretor utiliza imagens reais para detalhar o roubo que sofreu como parte do processo criativo de seu primeiro longa metragem.",
+                "Documentário, 22’ \n\n Na Vila de Alter do Chão, no Pará, os catraieiros exercem seu trabalho nos dias que antecedem o Çairé, festa local responsável pelo maior movimento turístico, econômico, cultural e religioso da temporada. \n\n Roteiro, Fotografia, Direção e Montagem: Rodrigo Ribeyro. Festivais: 30º Curta Cinema - Festival Internacional de Curtas do Rio de Janeiro/Brasil. 44º Festival Guarnicê - Maranhão/Brasil.",
+                "Álbum visual, 23' \n\n Roteiro, Fotografia, Direção e Montagem: Rodrigo Ribeyro",
+                "Ficção, 24’ \n\n Bento, trabalhador e morador do centro de São Paulo, volta ao lugar em que cresceu: a casa do avô na Serra da Cantareira. Lá, busca não somente a paz, mas também um emprego. \n\n 3o Prêmio da Competição Oficial da Cinéfondation - 74o Festival de Cannes.",
+                "Faixa produzida por Carabobina. Letra por Raphael Vaz. Mix e Master por Alejandra Luciani. Direção, fotografia, cor e montagem por Rodrigo Ribeyro. Cachorro Sensível Filmes.",
+                "Produção, Guitarra, Sintetizador e Sample por Julio Santa Cecília. Baixo e Percussão por Paulo Emmery. Direção, fotografia, cor e montagem por Rodrigo Ribeyro. Cachorro Sensível Filmes"
+            ]
+        },
+        {
+            "id": "EN",
+            "description": [
+                "Hybrid 8' \n\n In this interview, the great director uses real footage to detail the robbery he experienced as part of the creative process for his first feature film.",
+                "Documentary, 22’ \n\n In the village of Alter do Chão, in Pará, the catraieiros do their work in the days before Çairé, the local festival responsible for the biggest touristic, economic, cultural and religious movement of the season. \n\n Screenplay, Photography, Direction and Editing: Rodrigo Ribeyro. Festivals: 30th Curta Cinema - Rio de Janeiro International Short Film Festival/Brazil. 44th Guarnicê Festival - Maranhão/Brazil.",
+                "Visual Album, 23' \n\n Script, Photography, Direction and Editing: Rodrigo Ribeyro",
+                "Fiction, 24' \n\n Bento, a worker and resident of downtown São Paulo, returns to the place where he grew up: his grandfather's house in Serra da Cantareira. There, he seeks not only peace, but also a job.",
+                "Track produced by Carabobina. Lyrics by Raphael Vaz. Mix and Master by Alejandra Luciani. Direction, photography, color and editing by Rodrigo Ribeyro. Sensitive Dog Films.",
+                "Production, Guitar, Synthesizer and Sample by Julio Santa Cecília. Bass and Percussion by Paulo Emmery. Direction, photography, color and editing by Rodrigo Ribeyro. Sensitive Dog Films"
+            ]
+        },
+        {
+            "id": "ES",
+            "description": [
+                "Híbrido 8' \n\n En esta entrevista, el gran director detalla con imágenes reales el robo que sufrió como parte del proceso creativo de su primer largometraje. \n\n Híbrido, 8'",
+                "Documentário, 22’ \n\n En la aldea de Alter do Chão, en Pará, los catraieiros trabajan en los días previos a Çairé, la fiesta local responsable del mayor movimiento turístico, económico, cultural y religioso de la temporada. \n\n Guión, Fotografía, Dirección y Montaje: Rodrigo Ribeyro. Festivales: 30º Curta Cinema - Festival Internacional de Curtas do Rio de Janeiro/Brasil.  44º Festival Guarnicê - Maranhão/Brasil.",
+                "Álbum visual, 23' \n\n Guión, Fotografía, Dirección y Montaje: Rodrigo Ribeyro",
+                "Ficción, 24' \n\n Bento, obrero y residente en el centro de São Paulo, regresa al lugar donde creció: la casa de su abuelo en Serra da Cantareira. Allí no sólo busca paz, sino también un trabajo.",
+                "Tema producido por Carabobina. Letra de Raphael Vaz. Mezcla y masterización de Alejandra Luciani. Dirección, fotografía, color y edición de Rodrigo Ribeyro. Cachorro Sensível Filmes.",
+                "Producción, Guitarra, Sintetizador y Sample por Julio Santa Cecília. Bajo y Percusión por Paulo Emmery. Dirección, fotografía, color y montaje de Rodrigo Ribeyro. Cachorro Sensible Filmes"
+            ]
+        }
+    ],
+    "languageOption": [
+        {
+            "id": "PT",
+            "option": [
+                "sobre nós",
+                "nosso trabalho",
+                "contato"
+            ]
+        },
+        {
+            "id": "EN",
+            "option": [
+                "about us",
+                "our work",
+                "contact"
+            ]
+        },
+        {
+            "id": "ES",
+            "option": [
+                "sobre nosotros",
+                "nuestro trabajo",
+                "contacto"
+            ]
+        }
+    ],
+    "videoOption": [
+        "https://player.vimeo.com/video/406115710",
+        "https://player.vimeo.com/video/425697586",
+        "https://player.vimeo.com/video/406094933",
+        "https://player.vimeo.com/video/410917207",
+        "https://player.vimeo.com/video/825029502",
+        "https://player.vimeo.com/video/652737374"
+    ]
+}

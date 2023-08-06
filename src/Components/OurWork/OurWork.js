@@ -1,17 +1,11 @@
 import "./OurWork.css";
 import { useState } from "react";
 import ItemList from "./ItemList";
+import copywrite from "../copywrite.json";
 
 const OurWork = (props) => {
   //array with every video link
-  const videoOption = [
-    "https://player.vimeo.com/video/472077681",
-    "https://player.vimeo.com/video/425697586",
-    "https://player.vimeo.com/video/406094933",
-    "https://player.vimeo.com/video/410917207",
-    "https://player.vimeo.com/video/406115710",
-    "https://player.vimeo.com/video/411164854",
-  ];
+  const videoOption = copywrite.videoOption;
 
   //hook to change the video displayed
   const [video, setVideo] = useState(videoOption[0]);
@@ -27,37 +21,88 @@ const OurWork = (props) => {
     }
   };
 
+  // const everyText = Array.from(document.querySelectorAll('.everyText'));
+  // const itemOne = document.querySelector('#text-1');
+  // const itemTwo = document.querySelector('#text-2');
+  // const itemThree = document.querySelector('#text-3');
+  // const itemFour = document.querySelector('#text-4');
+  // const itemFive = document.querySelector('#text-5');
+  // const itemSix = document.querySelector('#text-6');
+
+
+  // const closeAll = (num) => {
+
+  //   switch (num) {
+  //     case '1':
+  //       itemOne.classList.remove('block')
+  //       everyText.filter(item => everyText.indexOf(item) !== num - 1).forEach(item => item.classList.add("block"))
+  //       break;
+  //     case '2':
+  //       itemTwo.classList.remove('block')
+  //       everyText.filter(item => everyText.indexOf(item) !== num - 1).forEach(item => item.classList.add("block"))
+  //       break;
+  //     case '3':
+  //       itemThree.classList.remove('block')
+  //       everyText.filter(item => everyText.indexOf(item) !== num - 1).forEach(item => item.classList.add("block"))
+  //       break;
+  //     case '4':
+  //       itemFour.classList.remove('block')
+  //       everyText.filter(item => everyText.indexOf(item) !== num - 1).forEach(item => item.classList.add("block"))
+  //       break;
+  //     case '5':
+  //       itemFive.classList.remove('block')
+  //       everyText.filter(item => everyText.indexOf(item) !== num - 1).forEach(item => item.classList.add("block"))
+  //       break;
+  //     case '6':
+  //       itemSix.classList.remove('block')
+  //       everyText.filter(item => everyText.indexOf(item) !== num - 1).forEach(item => item.classList.add("block"))
+  //       break;
+
+  //     default:
+  //   }
+  // }
+
   //function to change each video and description onClick
   const changeVideo = (e) => {
+
     switch (e) {
       case "1":
         setVideo(videoOption[0]);
         displayInfo("item-1", ".itemOne");
+        // closeAll(e)
         break;
       case "2":
         setVideo(videoOption[1]);
         displayInfo("item-2", ".itemTwo");
+        // closeAll(e)
         break;
       case "3":
         setVideo(videoOption[2]);
         displayInfo("item-3", ".itemThree");
+        // closeAll(e)
         break;
       case "4":
         setVideo(videoOption[3]);
         displayInfo("item-4", ".itemFour");
+        // closeAll(e)
         break;
       case "5":
         setVideo(videoOption[4]);
         displayInfo("item-5", ".itemFive");
+        // closeAll(e)
         break;
       case "6":
         setVideo(videoOption[5]);
         displayInfo("item-6", ".itemSix");
+        // closeAll(e)
         break;
       default:
-        console.log("error");
+        setVideo(videoOption[3]);
     }
   };
+
+
+  //everyText.forEach(item => item.addEventListener('click', closeAll));
 
   return (
     <div className={props.workClass}>
@@ -71,6 +116,7 @@ const OurWork = (props) => {
             classBtn={"everyBtn"}
             classP={"everyText"}
             func={() => changeVideo("1")}
+            //func2={() => closeAll(clicked)}
             title={props.TitleOne}
             description={props.DescriptionOne}
           />
@@ -82,6 +128,7 @@ const OurWork = (props) => {
             classBtn={"everyBtn"}
             classP={"everyText"}
             func={() => changeVideo("2")}
+            //func2={() => closeAll(clicked)}
             title={props.TitleTwo}
             description={props.DescriptionTwo}
           />
@@ -93,6 +140,7 @@ const OurWork = (props) => {
             classBtn={"everyBtn"}
             classP={"everyText"}
             func={() => changeVideo("3")}
+            // func2={() => closeAll(clicked)}
             title={props.TitleThree}
             description={props.DescriptionThree}
           />
@@ -104,6 +152,7 @@ const OurWork = (props) => {
             classBtn={"everyBtn"}
             classP={"everyText"}
             func={() => changeVideo("4")}
+            // func2={() => closeAll(clicked)}
             title={props.TitleFour}
             description={props.DescriptionFour}
           />
@@ -115,6 +164,7 @@ const OurWork = (props) => {
             classBtn={"everyBtn"}
             classP={"everyText"}
             func={() => changeVideo("5")}
+            // func2={() => closeAll(clicked)}
             title={props.TitleFive}
             description={props.DescriptionFive}
           />
@@ -126,6 +176,7 @@ const OurWork = (props) => {
             classBtn={"everyBtn"}
             classP={"everyText"}
             func={() => changeVideo("6")}
+            // func2={() => closeAll(clicked)}
             title={props.TitleSix}
             description={props.DescriptionSix}
           />
