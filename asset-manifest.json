@@ -15,11 +15,11 @@
     "static/media/cine1.e7cb020d.svg": "/static/media/cine1.e7cb020d.svg",
     "static/media/cine2.7c099634.svg": "/static/media/cine2.7c099634.svg",
     "static/media/englishBW.51a68476.svg": "/static/media/englishBW.51a68476.svg",
-    "static/media/logo1.908fba65.svg": "/newSensitiveDog/static/media/logo1.908fba65.svg",
-    "static/media/logo2.8bd8ae95.png": "/newSensitiveDog/static/media/logo2.8bd8ae95.png",
-    "static/media/novologo.8733aace.jpeg": "/newSensitiveDog/static/media/novologo.8733aace.jpeg",
+    "static/media/logo1.908fba65.svg": "/static/media/logo1.908fba65.svg",
+    "static/media/logo2.8bd8ae95.png": "/static/media/logo2.8bd8ae95.png",
+    "static/media/novologo.8733aace.jpeg": "/nstatic/media/novologo.8733aace.jpeg",
     "static/media/portugueseBW.6a3d7545.svg": "/static/media/portugueseBW.6a3d7545.svg",
-    "static/media/spanishBW.fd11d87a.svg": "/newSensitiveDog/static/media/spanishBW.fd11d87a.svg"
+    "static/media/spanishBW.fd11d87a.svg": "/static/media/spanishBW.fd11d87a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f799eb5d.js",
