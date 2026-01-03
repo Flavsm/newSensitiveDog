@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from "../../newSensitiveDog/src/Components/App";
+import App from "../../src/Components/App";
 import reportWebVitals from './reportWebVitals';
 
 
